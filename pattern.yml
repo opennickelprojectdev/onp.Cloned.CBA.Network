@@ -1,29 +1,26 @@
-metadata:
-  pattern-id: onp.base.template
-  pattern-name: base-template
-  organisation-id: onp
-  pattern-version: 1.0.0
-  pattern-description: some description here
-  pattern-categories: 
-              - bootstrap
+dependencies:
+  - pattern-id: onp.aws.bootstrap.deployment.deploymentbucket
+    version: 1.0.0
 
 lifecycle:
   create:
     commands:
-      - bash lifecycle/create.sh
-
+    - bash lifecycle/create.sh
   delete:
     commands:
-      - bash lifecycle/delete.sh
-
+    - bash lifecycle/delete.sh
   update:
     commands:
-      - bash lifecycle/update.sh
-
+    - bash lifecycle/update.sh
   upgrade:
     commands:
-      - bash lifecycle/upgrade.sh
+    - bash lifecycle/upgrade.sh
 
-dependencies:
-
-
+metadata:
+  organisation-id: onp
+  pattern-categories:
+  - Network
+  pattern-description: Default VPC created to host application records - test
+  pattern-id: onp.private.network.model
+  pattern-name: private-network-model
+  pattern-version: 1.0.0
