@@ -1,4 +1,7 @@
-dependencies: null
+dependencies:
+  - pattern-id: onp.aws.bootstrap.deployment.deploymentbucket
+    version: 1.0.0
+
 lifecycle:
   create:
     commands:
@@ -12,11 +15,12 @@ lifecycle:
   upgrade:
     commands:
     - bash lifecycle/upgrade.sh
+
 metadata:
   organisation-id: onp
   pattern-categories:
   - Network
-  pattern-description: Simple Network Pattern for Hosting Data
+  pattern-description: Default VPC created to host application records - test
   pattern-id: onp.private.network.model
   pattern-name: private-network-model
   pattern-version: 1.0.0
