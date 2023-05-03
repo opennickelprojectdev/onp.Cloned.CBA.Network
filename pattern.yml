@@ -1,7 +1,6 @@
 dependencies:
-  - pattern-id: onp.aws.bootstrap.deployment.deploymentbucket
-    version: 1.0.0
-
+- pattern-id: onp.aws.bootstrap.deployment.deploymentbucket
+  version: 1.0.0
 lifecycle:
   create:
     commands:
@@ -15,12 +14,11 @@ lifecycle:
   upgrade:
     commands:
     - bash lifecycle/upgrade.sh
-
 metadata:
   organisation-id: onp
   pattern-categories:
   - Network
-  pattern-description: Default VPC created to host application records - test
-  pattern-id: onp.private.network.model
-  pattern-name: private-network-model
+  pattern-description: Cloned CBA pattern
+  pattern-id: onp.Cloned.CBA.Network
+  pattern-name: Cloned CBA Network
   pattern-version: 1.0.0
